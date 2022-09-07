@@ -1,0 +1,52 @@
+// Напишите программу, которая генерирует несколько случайных чисел, и в цикле проверяет, кратны ли 
+// эти числа предварительно введенному числу, при кратности - цикл прерывается.
+
+int Prompt(string message)
+{
+System.Console.Write(message);
+return Convert.ToInt32(Console.ReadLine());
+}
+
+int value = Prompt("Введите число : ");
+Random number = new Random();
+int value1 = number.Next();
+int value2 = number.Next();
+int value3 = number.Next();
+int value4 = number.Next();
+System.Console.WriteLine(value1);
+System.Console.WriteLine(value2);
+System.Console.WriteLine(value3);
+System.Console.WriteLine(value4);
+
+if (value1 % value == 0)
+{
+    System.Console.WriteLine($"{value1} кратно {value}");
+}
+else
+{
+    System.Console.WriteLine($"{value1} не кратно {value}");
+}
+if (value2 % value == 0)
+{
+    System.Console.WriteLine($"{value2} кратно {value}");
+}
+else
+{
+    System.Console.WriteLine($"{value2} не кратно {value}");
+}
+if (value3 % value == 0)
+{
+    System.Console.WriteLine($"{value3} кратно {value}");
+}
+else
+{
+    System.Console.WriteLine($"{value3} не кратно {value}");
+}
+if (value4 % value == 0)
+{
+    System.Console.WriteLine($"{value4} кратно {value}");
+}
+else
+{
+    System.Console.WriteLine($"{value4} не кратно {value}");
+}
