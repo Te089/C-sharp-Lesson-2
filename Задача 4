@@ -1,0 +1,25 @@
+// Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
+// и проверяет, является ли этот день выходным.
+
+int Prompt(string message)
+{
+System.Console.Write(message);
+return Convert.ToInt32(Console.ReadLine());
+}
+
+int value = Prompt("Введите день недели : ");
+if (value >= 1 && value <= 5)
+{
+    System.Console.WriteLine("Не выходной");
+} 
+else
+{
+    if (value == 6 || value == 7)
+    {
+        System.Console.WriteLine("Выходной");
+    }
+    else
+    {
+        System.Console.WriteLine("Такого дня не существует");
+    }
+}
